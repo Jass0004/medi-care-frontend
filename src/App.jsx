@@ -29,6 +29,7 @@ import PrivateRoute from "./components/PrivateRoute";
 import Unauthorized from "./pages/Unauthorized";
 import PublicRoute from "./components/PublicRoute";
 import NotFound from "./pages/NotFound";
+import Landing from "./pages/Landing";
 
 
 function App() {
@@ -38,6 +39,7 @@ function App() {
       <Navbar />
 
       <Routes>
+          <Route path="/" element={<Landing />} />
 
         {/* PUBLIC */}
 <Route

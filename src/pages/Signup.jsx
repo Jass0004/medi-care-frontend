@@ -76,7 +76,7 @@ const Signup = () => {
           <button
             onClick={handleSignup}
             disabled={loading}
-            className="bg-green-500 text-white p-3 rounded-lg hover:bg-green-600 transition duration-300 font-semibold disabled:opacity-50"
+            className="bg-blue-500 text-white p-3 rounded-lg hover:bg-blue-600 transition duration-300 font-semibold disabled:opacity-50"
           >
             {loading ? "Signing up..." : "Signup"}
           </button>
@@ -85,7 +85,7 @@ const Signup = () => {
 
         <p className="text-sm text-gray-500 text-center mt-4">
           Already have an account?{" "}
-          <span className="text-green-500 cursor-pointer">
+          <span className="text-blue-500 cursor-pointer">
             <Link to="/login">Login</Link>
           </span>
         </p>
