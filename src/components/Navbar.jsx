@@ -47,6 +47,13 @@ const Navbar = () => {
         {/* DESKTOP */}
         <div className="hidden md:flex items-center gap-6">
 
+          <Link 
+  className="flex items-center gap-1 hover:text-blue-500" 
+  to="/"
+>
+  <Home size={18} /> Home
+</Link>
+
           {!user ? (
             <>
               <Link className="flex items-center gap-1 hover:text-blue-500" to="/login">
@@ -114,6 +121,14 @@ const Navbar = () => {
       {/* MOBILE MENU */}
       {menuOpen && (
         <div className="md:hidden px-4 pb-4 space-y-3 animate-fadeIn">
+
+          <Link 
+  onClick={() => setMenuOpen(false)} 
+  to="/" 
+  className="flex items-center gap-2"
+>
+  <Home size={18} /> Home
+</Link>
 
           {!user ? (
             <>
